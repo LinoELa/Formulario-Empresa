@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Formulario De Empresa </title>
+</head>
+
+<body>
+
+    <div class="menu">
+
+        <header class="header">
+            <h1 class="text-center" id="title">Formulario Encuesta Empresa </h1>
+            <p class="description text-center" id="description"> "Gracias por coger el tiempo para ayudarnos a mejorar
+                nuestra empresa."
+            </p>
+            <hr>
+
+        </header>
+        <main>
+
+
+            <form  id="survey-form">
+                <div class="form-group">
+                    <label id="name-label" for="name" > Name : </label>
+                    <input type="text" name="name" id="name" class="from-control" placeholder="Enter your name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email-label" form="email">Email :</label>
+                    <input type="email" name="email" id="email" class="form-control" placeholder="Enter you Email" required>
+                </div>
+
+
+
+
+
+
+
+                
+
+                <fieldset class='section-1'>
+                    <label for="name" id="name-label">
+                        nombre :
+                        <input type="text" id="name" placeholder="Introduce tu Nombre" required>
+                    </label>
+
+                    <label for="email">
+                        Correo :
+                        <input type="email" id="email-label" name="email" placeholder="Correo Electronico">
+                    </label>
+
+                    <label for="number" id="number-label"> Edad <small class='Opcional'>(Opcional) :</small>
+                        <input type="number" id="number" pattern="[0,9]" min="0" max="120"
+                            placeholder="Introduce tu edad" required>
+                    </label>
+
+                    <hr>
+
+                </fieldset>
+
+
+
+
+                <fieldset class="section-2">
+                    <label for="referrer"> Eligue tu estado actual :
+                        <select name="dropdown" id="dropdown" required>
+                            <option value=" " name="radio"> Estado</option>
+                            <option value="1">Estudiante</option>
+                            <option value="2">Casado</option>
+                            <option value="3">Viudo</option>
+                            <option value="4">Otro</option>
+                        </select>
+                    </label>
+
+                    <hr>
+
+                    <h5>Recomendarias nuestra empresa ? </h5>
+
+                    <label for="radio" name="radio">
+                        <input type="radio" id=" " name="radio" value=" cuenta-business" class="inline"> Cuenta Negocio
+                    </label>
+
+                    <label for="radio" name="radio">
+                        <input type="radio" id=" " name="radio" value="Cuenta-Personal" class="inline"> Cuenta Personal
+                    </label>
+
+
+                    <label for="radio" name="radio">
+                        <input type="radio" id=" " name="radio" value="Cuenta-Personal" class="inline"> Cuenta Personal
+                    </label>
+
+                </fieldset>
+
+                <fieldset>
+
+                </fieldset>
+
+                <input type="submit" value="Enviar " />
+            </form>
+
+        </main>
+    </div>
+
+
+
+</body>
+
+</html>
