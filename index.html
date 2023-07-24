@@ -23,31 +23,35 @@
         <main>
 
 
-            <form  id="survey-form">
+            <form id="survey-form">
                 <div class="form-group">
-                    <label id="name-label" for="name" > Name : </label>
-                    <input type="text" name="name" id="name" class="from-control" placeholder="Enter your name" required>
+                    <label id="name-label" for="name"> Name : </label>
+                    <input type="text" name="name" id="name" class="from-control" placeholder="Enter your name"
+                        required>
                 </div>
 
                 <div class="form-group">
                     <label for="email-label" form="email">Email :</label>
-                    <input type="email" name="email" id="email" class="form-control" placeholder="Enter you Email" required>
+                    <input type="email" name="email" id="email" class="form-control" placeholder="Enter you Email"
+                        required>
                 </div>
 
                 <div class="form-group">
-                    <label id="number-label" for="number" form="number">Edad : <small class="clue">(Opcional)</small></label>
-                    <input type="number" name="edad" id="number" min="10" max="99" class="form-control" placeholder="Edad" >
+                    <label id="number-label" for="number" form="number">Edad : <small
+                            class="clue">(Opcional)</small></label>
+                    <input type="number" name="edad" id="number" min="10" max="99" class="form-control"
+                        placeholder="Edad">
                 </div>
 
                 <div class="form-group">
 
                     <p>Que opcion mejor te describe te describe ? </p>
 
-                    <select name="role" id="dropdown" class="form-control" required> 
+                    <select name="role" id="dropdown" class="form-control" required>
                         <option value disabled selected>Selecciona tu opcion</option>
                         <option value="student">Student</option>
                         <option value="job">Full Time Job</option>
-                        <option value="learner">Full  Time Learner</option>
+                        <option value="learner">Full Time Learner</option>
                         <option value="perferNo">Prefer not to say</option>
                         <option value="other">Other</option>
                     </select>
@@ -58,13 +62,13 @@
                     <p class="recomendacion">Would you recommend my business to you friend ?</p>
 
                     <label for="">
-                        <input type="radio" name="user-recommend" value="defiinetely" class="input-radio" checked >
+                        <input type="radio" name="user-recommend" value="defiinetely" class="input-radio" checked>
                         Sin duda
                     </label>
 
                     <label for="">
                         <input type="radio" name="user-recommend" value="maybe" type="radio" class="input-radio">
-                        Tal vez 
+                        Tal vez
                     </label>
 
                     <label for="">
@@ -74,16 +78,38 @@
 
                 </div>
 
+                <div class="form-group">
+                    <p>What Would you like to improve
+                        <span>(Check all appy )</span>
+                    </p>
 
+                    <label for="">
+                    <input type="checkbox" name="prefer" value="front-end-project" class="input-checkbox">
+                    "Front End Project"
+                    </label>
+                    <input type="checkbox" name="prefer" value="Back-end-project" class="input-checkbox">
+                    "Back-end-project"
+                    </label>
+                    <input type="checkbox" name="prefer" value="Data-Visnualization" class="input-checkbox">
+                    "Data Visualization"
+                    </label>
+                    <input type="checkbox" name="prefer" value="Challenge" class="input-checkbox">
+                    "Challenge"
+                    </label>
+                    <input type="checkbox" name="prefer" value="videos" class="input-checkbox">
+                    "Videos"
+                    </label>
+                </div>
 
+                <div class="form-goup">
+                    <p>Any comments or suggestions ?</p>
+                    <textarea name="textarea" id="comments" placeholder="Enter your comment here..."></textarea>
+                </div>
 
+                <div class="form-group">
+                    <button class="submit-butoon">Submit</button>
+                </div>
 
-
-
-
-                
-
-                <input type="submit" value="Enviar " />
             </form>
 
         </main>
